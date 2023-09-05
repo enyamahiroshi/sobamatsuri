@@ -88,27 +88,28 @@ img.bg {
 #navbar ul {
 	position: relative;
 	margin: 0px auto;
-	padding-left: 45px;
+	padding: 0 25px;
 	width: 1000px;
 	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
 }
 #navbar ul li {
-	position: relative;
-	float: left;
-	width: 130px;
-	height: 50px;
+	flex-basis: calc(100% / 6);
+	flex-basis: auto;
 	text-align: center;
-	margin: 0px auto;
 }
 #navbar a {
+	height: 100%;
+	padding: 0 2em;
 	background-color: #5E0712;
 	font-size: 14px;
-	display: block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: #FFF;
 	text-decoration: none;
-	margin: 0px auto;
-	padding-top: 16px;
-	padding-bottom: 16px;
 }
 #navbar a:hover {
 	color: #333;
@@ -316,4 +317,43 @@ ul {
 }
 .add {
 	font-size: 14px;
+}
+
+
+/* 20230905追記 */
+*{
+	box-sizing: border-box;
+	color: #000;
+}
+
+.title1{
+	margin: 2em 0 1em;
+	padding-bottom: 6px;
+	font-size: 22px;
+	font-weight: bold;
+	border-bottom: 4px solid #FFCC99;
+}
+.title1:first-of-type{
+	margin-top: 0;
+}
+
+table{
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+.tbl-booth{
+
+}
+.tbl-booth th,
+.tbl-booth td{
+	padding: 0.4em 0.8em;
+	border: 1px solid #443733;
+}
+.cell-s{
+	width: 100px;
+}
+.cell-m{
+	width: 250px;
+}
+.cell-l{
 }
