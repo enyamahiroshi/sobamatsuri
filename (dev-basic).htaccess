@@ -1,0 +1,8 @@
+AuthUserFile /home/sobamatsuri/www/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Please enter your ID and password."
+AuthType Basic
+require valid-user
+<Files ~ "^.ht">
+deny from all
+</Files>
