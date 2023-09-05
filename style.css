@@ -88,7 +88,6 @@ img.bg {
 #navbar ul {
 	position: relative;
 	margin: 0px auto;
-	padding: 0 25px;
 	width: 1000px;
 	height: 50px;
 	display: flex;
@@ -96,13 +95,12 @@ img.bg {
 	align-items: stretch;
 }
 #navbar ul li {
-	flex-basis: calc(100% / 6);
 	flex-basis: auto;
 	text-align: center;
 }
 #navbar a {
 	height: 100%;
-	padding: 0 2em;
+	padding: 0 3em;
 	background-color: #5E0712;
 	font-size: 14px;
 	display: flex;
@@ -323,13 +321,15 @@ ul {
 /* 20230905追記 */
 *{
 	box-sizing: border-box;
-	color: #000;
+}
+#second_main *{
+	color: #111;
 }
 
 .title1{
 	margin: 2em 0 1em;
 	padding-bottom: 6px;
-	font-size: 22px;
+	font-size: 24px;
 	font-weight: bold;
 	border-bottom: 4px solid #FFCC99;
 }
@@ -337,17 +337,33 @@ ul {
 	margin-top: 0;
 }
 
+.title2{
+	margin: 2em 0 0;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.title3{
+	margin: 2em 0 0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.zenkaku-brackets{
+	margin-left: -0.5em;
+}
+
+
 table{
+	width: 100%;
 	border-collapse: collapse;
   border-spacing: 0;
 }
-.tbl-booth{
-
-}
-.tbl-booth th,
-.tbl-booth td{
-	padding: 0.4em 0.8em;
-	border: 1px solid #443733;
+th,
+td{
+	padding: 0.8em 1em;
+	border: 1px solid #aaa;
+	line-height: 1.5;
 }
 .cell-s{
 	width: 100px;
@@ -356,4 +372,12 @@ table{
 	width: 250px;
 }
 .cell-l{
+}
+
+.tbl1{
+	margin: 1em 0 4em;
+}
+.tbl1 th{
+	width: 25%;
+	text-align: left;
 }
