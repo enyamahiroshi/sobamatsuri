@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
 font: 100%/1.4 "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-color: #666;
+color: #111;
 margin: 0px;
 padding: 0px;
 background-image: url(images/background.jpg);
@@ -323,7 +323,7 @@ ul {
 	box-sizing: border-box;
 }
 #second_main *{
-	color: #111;
+	/* color: #111; */
 }
 
 .title1{
@@ -369,7 +369,7 @@ td{
 	width: 100px;
 }
 .cell-m{
-	width: 250px;
+	width: 255px;
 }
 .cell-l{
 }
