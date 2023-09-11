@@ -155,7 +155,7 @@ img.bg {
   #navbar {
     width: auto;
     height: auto;
-    background-color: rgb(45, 8, 12);
+    background-color: #ffffff;
 
     ul {
       margin: 0px auto;
@@ -171,7 +171,7 @@ img.bg {
     }
 
     a {
-      padding: 10px 0;
+      padding: 15px 0;
       font-size: 13px;
       line-height: 1;
       white-space: nowrap;
@@ -190,6 +190,7 @@ img.bg {
   #top_img {
     width: auto;
     height: 48vw;
+    background-position: center;
     background-size: cover;
   }
 }
@@ -201,6 +202,14 @@ img.bg {
   height: 138px;
   background: url(images/second_header06.jpg);
 }
+@media screen and (max-width: 767px) {
+  #gaiyo_header_img {
+    width: auto;
+    height: 22vw;
+    background-position: center;
+    background-size: cover;
+  }
+}
 
 #sobabooth_header_img {
   margin: 0px auto;
@@ -208,6 +217,14 @@ img.bg {
   width: 1000px;
   height: 138px;
   background: url(images/second_header01.jpg);
+}
+@media screen and (max-width: 767px) {
+  #sobabooth_header_img {
+    width: auto;
+    height: 22vw;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 #bussanboth_header_img {
@@ -248,7 +265,7 @@ img.bg {
 }
 @media screen and (max-width: 767px) {
   #contents {
-    padding: 0 20px;
+    padding: 0 10px;
     width: auto;
   }
 }
@@ -312,7 +329,7 @@ img.bg {
   #main {
     width: auto;
     margin-left: 0;
-    margin-top: 30px;
+    margin-top: 15px;
     float: none;
   }
 }
@@ -330,13 +347,22 @@ img.bg {
     ul{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      gap: 10px;
       li{
         a{
           display: block;
         }
       }
     }
+  }
+}
+
+.title-img{
+  margin-top: 40px;
+}
+@media screen and (max-width: 767px) {
+  .title-img{
+    margin-top: 20px;
   }
 }
 
@@ -382,6 +408,14 @@ img.bg {
   margin-left: 50px;
   margin-top: 40px;
 }
+@media screen and (max-width: 767px) {
+  #second_main {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
 
 .accent {
   font-size: 22px;
@@ -418,13 +452,14 @@ img.bg {
     float: none;
     width: auto;
     margin-right: 0;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 0;
-
+    padding-top: 30px;
+    border-top: 1px solid #ccc;
     ul{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      gap: 10px;
       li{
         a{
           display: block;
@@ -454,7 +489,7 @@ img.bg {
     margin-left: 0;
     float: none;
     padding: 0.2em 1.2em;
-    margin: 50px 20px 0;
+    margin: 20px 10px 0;
     width: auto;
   }
 }
@@ -469,10 +504,10 @@ img.bg {
 }
 @media screen and (max-width: 767px) {
   #page_top {
-    padding: 0 20px;
-    margin-top: 30px;
+    padding: 0 10px;
+    margin-top: 20px;
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     float: none;
     width: auto;
     a{
@@ -480,7 +515,7 @@ img.bg {
       padding: 12px 10px;
       text-align: center;
       border: 1px solid #ccc;
-      border-radius: 6px;
+      border-radius: 3px;
     }
   }
 }
@@ -498,9 +533,10 @@ img.bg {
 @media screen and (max-width: 767px) {
   #footer {
     width: auto;
-    padding: 10px 20px;
+    padding: 10px;
     .copy{
       margin-top: 25px;
+      margin-bottom: 0;
       font-size: 10px;
       text-align: center;
     }
@@ -548,11 +584,23 @@ ul {
   font-size: 24px;
   font-weight: bold;
 }
+@media screen and (max-width: 767px) {
+  .title2 {
+    margin-top: 1em;
+    font-size: 20px;
+  }
+}
 
 .title3 {
   margin: 2em 0 0;
   font-size: 20px;
   font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .title3 {
+    margin-top: 1em;
+    font-size: 18px;
+  }
 }
 
 .zenkaku-brackets {
@@ -589,5 +637,28 @@ td {
   th {
     width: 25%;
     text-align: left;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tbl1 {
+    margin-bottom: 3em;
+
+    th {
+      width: 30%;
+      text-align: left;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .scroll-table {
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+    table {
+      width: 650px;
+    }
   }
 }

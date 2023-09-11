@@ -7,9 +7,10 @@
     <meta http-equiv="content-script-type" content="text/javascript">
     <title>段位認定・名人戦</title>
     <link href="../style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/rollover.js"></script>
-    <script type="text/javascript" src="../js/gotop.js"></script>
+    <link href="../scroll-hint.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery.js" defer></script>
+    <script type="text/javascript" src="../js/rollover.js" defer></script>
+    <script type="text/javascript" src="../js/gotop.js" defer></script>
     <script>
     (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
@@ -59,7 +60,7 @@
     <div id="container">
       <div class="container_head">
         <a href="../index.html">
-          <img src="../images/title_img02.jpg" width="1000" height="150" alt="信州・松本そば祭り" longdesc="images/title_img02.jpg" >
+          <img src="../images/title_img02.jpg" width="1000" height="150" alt="信州・松本そば祭り">
         </a>
       </div>
       <div id="navbar">
@@ -85,7 +86,7 @@
         <div id="second_main">
           <p>
             <strong>
-              <img src="../images/tournament_title.gif" width="650" height="76" alt="段位認定・名人戦" longdesc="images/tournament_title.gif" >
+              <img src="../images/tournament_title.gif" width="650" height="76" alt="段位認定・名人戦">
             </strong>
           </p>
           <h2 class="title2">■全麺協 そば道三段位認定会</h2>
@@ -103,7 +104,14 @@
             </tr>
             <tr>
               <th>時間</th>
-              <td>準備中</td>
+              <td>第1組  9:30～
+                <br>第2組 10:50～
+                <br>第3組 14:00～
+                <br>第4組 15:20～
+                <p>
+                  <small>※時間は前後する場合があります。</small>
+                </p>
+              </td>
             </tr>
           </table>
           <h2 class="title2">■第14回信州そば打ち名人戦</h2>
@@ -220,4 +228,15 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="../js/scroll-hint.min.js"></script>
+  <script>
+    new ScrollHint(".js-scroll-table", {
+      remainingTime: -1,
+      scrollHintBorderWidth: 10,
+      suggestiveShadow: true,
+      i18n: {
+        scrollable: 'スクロール'
+      },
+    });
+  </script>
 </html>

@@ -7,9 +7,10 @@
     <meta http-equiv="content-script-type" content="text/javascript">
     <title>2023年度 信州・松本そば祭り</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/rollover.js"></script>
-    <script type="text/javascript" src="js/gotop.js"></script>
+    <link href="scroll-hint.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js" defer></script>
+    <script type="text/javascript" src="js/rollover.js" defer></script>
+    <script type="text/javascript" src="js/gotop.js" defer></script>
     <script>
       (function (i, s, o, g, r, a, m) {
         i["GoogleAnalyticsObject"] = r;
@@ -59,7 +60,7 @@
     <div id="container">
       <div class="container_head">
         <a href="index.html" >
-          <img src="images/title_img02.jpg" width="1000" height="150" alt="信州・松本そば祭り" longdesc="images/title_img02.jpg">
+          <img src="images/title_img02.jpg" width="1000" height="150" alt="信州・松本そば祭り">
         </a>
       </div>
       <div id="navbar">
@@ -168,4 +169,15 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="js/scroll-hint.min.js"></script>
+  <script>
+    new ScrollHint(".js-scroll-table", {
+      remainingTime: -1,
+      scrollHintBorderWidth: 10,
+      suggestiveShadow: true,
+      i18n: {
+        scrollable: 'スクロール'
+      },
+    });
+  </script>
 </html>
