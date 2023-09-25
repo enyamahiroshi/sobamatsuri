@@ -135,7 +135,6 @@ img.bg {
   #navbar {
     width: auto;
     height: auto;
-    background-color: #ffffff;
   }
   #navbar ul {
     margin: 0px auto;
@@ -143,10 +142,16 @@ img.bg {
     height: auto;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1px;
+    border-bottom: 1px solid #fff;
   }
   #navbar ul li {
-    flex-basis: calc(50% - 0.5px);
+    flex-basis: 50%;
+  }
+  #navbar ul li:not(:nth-of-type(5)) {
+    border-bottom: 1px solid #fff;
+  }
+  #navbar ul li:nth-of-type(odd) {
+    border-right: 1px solid #fff;
   }
   #navbar a {
     padding: 15px 0;
@@ -386,6 +391,19 @@ img.bg {
     margin-top: 15px;
   }
 }
+.announcement {
+  padding: 5px 25px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 767px) {
+  .announcement {
+    padding: 2px 15px;
+    margin-bottom: 15px;
+  }
+}
 .accent {
   font-size: 22px;
 }
@@ -548,6 +566,9 @@ ul {
   font-size: 24px;
   font-weight: bold;
 }
+.title2:first-child {
+  margin-top: 0;
+}
 
 @media screen and (max-width: 767px) {
   .title2 {
@@ -559,6 +580,9 @@ ul {
   margin: 2em 0 0;
   font-size: 20px;
   font-weight: bold;
+}
+.title3:first-child {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -607,6 +631,21 @@ td {
   .tbl1 th {
     width: 30%;
     text-align: left;
+  }
+}
+.tbl2 {
+  margin-top: 1em;
+}
+
+.tbl2 th,
+.tbl2 td {
+  padding: 0.5em 1em;
+}
+
+@media screen and (max-width: 767px) {
+  .tbl2 th,
+  .tbl2 td {
+    padding: 0.3em 0.6em;
   }
 }
 @media screen and (max-width: 767px) {
