@@ -184,6 +184,26 @@ img.bg {
   }
 }
 
+.msg-closed{
+  p{
+    margin: 0;
+    padding: 1.5em .5em;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .msg-closed{
+    p{
+      padding: 1.5em 1em;
+      font-size: clamp(16px, 5vw, 28px);
+      text-align: left;
+    }
+  }
+}
+
 #top_img {
   margin: 0px auto;
   padding: 0px;
