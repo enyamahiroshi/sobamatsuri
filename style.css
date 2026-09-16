@@ -828,6 +828,34 @@ ul {
   margin-left: -0.5em;
 }
 
+/* 見出し内の交通手段アイコン */
+.title-icon {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.15em;
+  vertical-align: -0.15em;
+}
+.title-icon--bike {
+  color: #1a73e8;
+  margin-left: 0.15em;
+  margin-right: 0.3em;
+}
+.title-icon--bus {
+  color: #f57c00;
+}
+
+/* 駐輪場案内の小見出し */
+.title3--guide {
+  margin-top: 0.8em;
+}
+
+/* アクセスページ：見出し間の区切り罫線 */
+#access_header_img ~ #contents #second_main > .title2:not(:first-child) {
+  padding-top: 1em;
+  border-top: 1px solid #ccc;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -843,6 +871,22 @@ td {
 
 .cell-s {
   width: 100px;
+}
+
+.tbl-booth_with-booth-no th.cell-s,
+.tbl-booth_with-booth-no td:first-child {
+  width: 72px;
+  max-width: 72px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.tbl-booth__group-row td {
+  font-weight: bold;
+  text-align: center;
+  background-color: #f5f0f0;
 }
 
 .cell-m {

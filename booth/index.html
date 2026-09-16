@@ -9,7 +9,7 @@
     />
     <meta http-equiv="content-script-type" content="text/javascript" />
     <title>そばブース</title>
-    <link href="../style.css?20260827-1" rel="stylesheet" type="text/css" />
+    <link href="../style.css?20260916-1" rel="stylesheet" type="text/css" />
     <link href="../scroll-hint.css" rel="stylesheet" />
     <script type="text/javascript" src="../js/jquery.js" defer></script>
     <script type="text/javascript" src="../js/rollover.js" defer></script>
@@ -140,29 +140,52 @@
           </p>
 
           <div class="scroll-table js-scroll-table">
-            <table class="tbl-booth">
+            <table class="tbl-booth tbl-booth_with-booth-no">
               <thead>
                 <tr>
-                  <th class="cell-m">看板名</th>
-                  <th class="cell-l">メニュー</th>
+                  <th class="cell-s">No.</th>
+                  <th class="cell-m">店名</th>
+                  <th class="cell-l">出展品目</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
+                  <td>1</td>
                   <td>信州ゆかり庵</td>
-                  <td></td>
+                  <td>もりそば</td>
                 </tr>
                 <tr>
+                  <td>2</td>
                   <td>あぐり奈川</td>
                   <td>とうじそば</td>
                 </tr>
                 <tr>
-                  <td>信州そば 玄治郎</td>
-                  <td></td>
+                  <td>3</td>
+                  <td>信州そば玄治郎</td>
+                  <td>ざるそば／くるみそば／とろろそば／すんきそば／かき揚げそば</td>
                 </tr>
                 <tr>
+                  <td></td>
                   <td>松本 振舞いそば</td>
                   <td>一口そば（数量限定）<a href="../local-info/">詳しくはこちら</a></td>
+                </tr>
+                <tr class="tbl-booth__group-row">
+                  <td colspan="3">そば道具市</td>
+                </tr>
+                <tr>
+                  <td>そ4</td>
+                  <td>頑固そば道具會津中村豊蔵</td>
+                  <td>そば道具／木製品／漆器</td>
+                </tr>
+                <tr>
+                  <td>そ5</td>
+                  <td>新潟左藤蔵刃物(株)セキカワ</td>
+                  <td>包丁類／そば道具</td>
+                </tr>
+                <tr>
+                  <td>そ6</td>
+                  <td>藍染市場®</td>
+                  <td>藍染草木染衣類</td>
                 </tr>
               </tbody>
             </table>
@@ -182,159 +205,134 @@
           </p>
 
           <div class="scroll-table js-scroll-table">
-            <table class="tbl-booth">
+            <table class="tbl-booth tbl-booth_with-booth-no">
               <thead>
                 <tr>
-                  <th class="cell-s">都道府県</th>
-                  <th class="cell-m">ブース名</th>
-                  <th class="cell-l">出品品目(一例)</th>
+                  <th class="cell-s">No.</th>
+                  <th class="cell-m">店名</th>
+                  <th class="cell-l">出展品目</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="nabar">
-                  <td>福島県</td>
-                  <td>DENDEN</td>
-                  <td>川俣シャモ1本焼き、仙台牛タン串焼き、牛ステーキ串焼きなど</td>
+                  <td>1</td>
+                  <td>Thumbs Up</td>
+                  <td>カレー／焼酎／ジャスミン茶</td>
                 </tr>
                 <tr class="nabar">
-                  <td>長野県</td>
-                  <td>信州そばだんご道場</td>
-                  <td>信州みそだれそばだんご、信州みたらしそばだんご、信州みそだれだんご等</td>
+                  <td>2</td>
+                  <td>ニシオフーズ</td>
+                  <td>五平餅／山賊焼き／串焼／みたらし団子／やきそば</td>
                 </tr>
                 <tr class="nabar">
-                  <td>長野県</td>
-                  <td>小川の庄 おやき村</td>
-                  <td>縄文おやき各種</td>
+                  <td>3</td>
+                  <td>肉ビストロマウントバル</td>
+                  <td>ステーキ／ソーセージ／アルコール</td>
                 </tr>
                 <tr class="nabar">
-                  <td>長野県</td>
-                  <td>さんさんファーム</td>
-                  <td>さんさん豚フランク各種、鹿ソーセージ、豚串焼き、旬のフルーツ各種</td>
-                </tr>
-                <tr class="nabar">
-                  <td>新潟県</td>
-                  <td>いちむら</td>
-                  <td>新潟名物半身揚げ</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>めし処 宮島</td>
-                  <td>キノコ汁、ジンギスカン、イカ焼、松茸（予定）</td>
-                </tr>
-                <tr class="nabar">
-                  <td>福島県</td>
-                  <td>頑固そば道場 會津中村豊蔵</td>
-                  <td>頑固そば道具一式<br />初心者からプロ用まで幅広く製造しております</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>株式会社テレビ信州</td>
-                  <td>陽司＆秀一がサポート<br />アナウンサー特別体験会PRほか</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>松本地酒振興協同組合</td>
-                  <td>松本平の造り酒屋10蔵の秋上がり清酒の販売<br />有料試飲（1杯200円）</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>鎌倉麺業株式会社</td>
-                  <td>安曇野産新そば使用の生そば・新そば粉・そばまんじゅう・そばかりんとう</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>ピーロートジャパン株式会社</td>
-                  <td>世界各国の銘醸ワインの試飲を行っています。<br />プレミアムワイン、貴腐ワイン</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>グラン・シャリオ・コンパニー</td>
-                  <td>信州福味鶏山賊焼・仙台牛タンステーキ・チュロス・各種アルコール類など</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>王滝グループ 小木曽製粉</td>
-                  <td>新名物そばちゃんこ<br />他にも焼きりんごパイ・そばまんじゅう・シードル等</td>
-                </tr>
-                <tr class="nabar">
-                  <td>千葉県</td>
-                  <td>MEISON BRETONNEガレット屋</td>
-                  <td>フランスブルターニュ地方の郷土料理<br />そば粉のガレット</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>cafe SENRI&喫茶レトロ</td>
-                  <td>ソフトクリーム、山賊焼、フランクフルト、生ビール</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>コナモンズ</td>
-                  <td>牛タン串焼き・五平餅・みたらしだんご・やきそば</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>焼肉ハウス大将軍</td>
-                  <td>和牛カルビ、牛上タン塩、ホルモン焼きそば、生ビール、生レモンサワー等</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>信州ガレット振興会</td>
-                  <td>長野県産そば粉使用<br />外はカリッ、中はモチッとした本格ガレットです</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>ポケットミルク</td>
-                  <td>ビンの酪農家限定信州安曇野牛乳<br />コーヒー牛乳 フルーツ牛乳などの乳製品</td>
-                </tr>
-                <tr class="nabar">
-                  <td>神奈川県</td>
-                  <td>藍染市場®</td>
-                  <td>各種藍染草木染め衣料品 Tシャツ 手拭 前掛 作務衣や小物 長野県産ろくろ工芸品等</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>有限会社オリジン</td>
-                  <td>安曇野産野菜各種・国内産海産物・ドライフルーツなど</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>信州須坂フルーツブルワリー&たけちゃん食品</td>
-                  <td>信州の果物を使用したクラフトビール（生と瓶）とモツ炒めの販売</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>キッセイ商事株式会社 澤志庵製麺所</td>
-                  <td>長野県産そばを使用した信州そばなど 各種麺類販売</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
-                  <td>株式会社 マル井</td>
-                  <td>安曇野のわさびメーカーです。<br />あらびきわさび・わさびチーズなど</td>
-                </tr>
-                <tr class="nabar">
-                  <td>長野県</td>
+                  <td>4</td>
                   <td>いぶしや</td>
-                  <td>極上和牛駆使（信州味噌だれ、安曇野わさび）、味噌くるみだれ五平餅、飲料</td>
+                  <td>串焼／五平餅／ドリンク類</td>
                 </tr>
                 <tr class="nabar">
-                  <td>長野県</td>
-                  <td>株式会社 日邦バルブ</td>
-                  <td>アウトドア用品スキレット、テント用ペグ、各種ジンギスカン鍋など</td>
+                  <td>5</td>
+                  <td>いちむら</td>
+                  <td>新潟半身揚／唐揚／ポテト／牛串</td>
                 </tr>
                 <tr class="nabar">
-                  <td>新潟県</td>
-                  <td>株式会社セキカワ<br />新潟刃物 左藤蔵（ひだりとうぞう）</td>
-                  <td>新潟手打ち刃物各種、そば切り包丁各種を多数取り揃えております。</td>
+                  <td>6.7.8</td>
+                  <td>グラン・シャリオ・コンパニー</td>
+                  <td>生ビール／ジュース／クレープ／牛串／ポテト／10円パン／山賊焼</td>
                 </tr>
                 <tr class="nabar">
-                  <td>大阪府</td>
+                  <td>9</td>
+                  <td>焼喜肉処 大将軍</td>
+                  <td>焼肉／焼きそば／牛スジ／アルコール</td>
+                </tr>
+                <tr class="nabar">
+                  <td>10</td>
+                  <td>SENRI茜里＆城GUSUKU</td>
+                  <td>山賊焼／ソフトクリーム／ソーセージ／ビール／アップルパイ</td>
+                </tr>
+                <tr class="nabar">
+                  <td>11</td>
+                  <td>ピーロートジャパン(株)</td>
+                  <td>ワインの試飲／予約販売</td>
+                </tr>
+                <tr class="nabar">
+                  <td>12</td>
+                  <td>エイワ穂高ブルワリー</td>
+                  <td>クラフトビール</td>
+                </tr>
+                <tr class="nabar">
+                  <td>13</td>
+                  <td>信州須坂フルーツブルワリー</td>
+                  <td>フルーツエール／モツ／唐揚げ</td>
+                </tr>
+                <tr class="nabar">
+                  <td>14</td>
+                  <td>めし処 宮島</td>
+                  <td>キノコ汁／焼きそば／イカ焼／唐揚げ</td>
+                </tr>
+                <tr class="nabar">
+                  <td>15</td>
                   <td>ヴァルオージャパン株式会社</td>
-                  <td>流通されていない高級ワイン各種<br />リースリングカビネット・アイスワイン等</td>
+                  <td>ワインの試飲／予約販売</td>
                 </tr>
                 <tr class="nabar">
-                  <td>長野県</td>
-                  <td>長野県LP協会松本支部</td>
-                  <td>災害に強いLPガスによるガス発電機と炊き出しセットを使用した実演</td>
+                  <td>16</td>
+                  <td>PREMIUM WATER</td>
+                  <td>ウォーターサーバー</td>
+                </tr>
+                <tr class="nabar">
+                  <td>17</td>
+                  <td>(有)オリジン</td>
+                  <td>ドライフルーツ／干物</td>
+                </tr>
+                <tr class="nabar">
+                  <td>18</td>
+                  <td>ポケットミルク</td>
+                  <td>ビン牛乳／サーモン・イワナ甘露煮</td>
+                </tr>
+                <tr class="nabar">
+                  <td>19</td>
+                  <td>テレビ信州×エスビー食品</td>
+                  <td>映像放映／カレーパウダー／七味／一味</td>
+                </tr>
+                <tr class="nabar">
+                  <td>20</td>
+                  <td>松本地酒振興協同組合</td>
+                  <td>酒類販売</td>
+                </tr>
+                <tr class="nabar">
+                  <td>21</td>
+                  <td>株式会社小川の庄</td>
+                  <td>おやき</td>
+                </tr>
+                <tr class="nabar">
+                  <td>22.23</td>
+                  <td>キッセイ商事(株) 澤志庵製麺所</td>
+                  <td>そばかりんとう／乾そば／飲料</td>
+                </tr>
+                <tr class="nabar">
+                  <td>24</td>
+                  <td>信州そばだんご道場</td>
+                  <td>そば団子／味噌だれ団子／おやき</td>
+                </tr>
+                <tr class="nabar">
+                  <td>25</td>
+                  <td>信州ガレット振興会</td>
+                  <td>ガレット／そばビール／そば茶</td>
+                </tr>
+                <tr class="nabar">
+                  <td>26</td>
+                  <td>鎌倉麺業(株)</td>
+                  <td>そば粉／そば／そば饅頭／そばかりんとう</td>
+                </tr>
+                <tr class="nabar">
+                  <td>27</td>
+                  <td>株式会社マル井</td>
+                  <td>わさび／わさび商品</td>
                 </tr>
               </tbody>
             </table>
