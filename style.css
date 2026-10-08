@@ -836,11 +836,13 @@ ul {
   margin-right: 0.15em;
   vertical-align: -0.15em;
 }
+
 .title-icon--bike {
   color: #1a73e8;
   margin-left: 0.15em;
   margin-right: 0.3em;
 }
+
 .title-icon--bus {
   color: #f57c00;
 }
@@ -999,6 +1001,7 @@ td {
 }
 .map-magnifier.is-zoomed {
   cursor: grab;
+  touch-action: none;
 }
 .map-magnifier.is-dragging {
   cursor: grabbing;
@@ -1369,6 +1372,54 @@ figure img {
   height: auto;
 }
 
+.booth-map-link {
+  margin: 32px 0 0;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .booth-map-link {
+    margin-top: 16px;
+  }
+}
+
+.booth-map-link + .title-img {
+  margin-top: 32px;
+}
+@media screen and (max-width: 767px) {
+  .booth-map-link + .title-img {
+    margin-top: 16px;
+  }
+}
+
+.booth-map {
+  margin-top: 40px;
+  scroll-margin-top: 16px;
+}
+@media screen and (max-width: 767px) {
+  .booth-map {
+    margin-top: 20px;
+  }
+}
+.booth-map .map-magnifier__note {
+  margin-top: 0;
+}
+.booth-map .map-magnifier--sharp {
+  aspect-ratio: 716/1048;
+}
+.booth-map .map-magnifier--sharp .map-magnifier__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250%;
+  height: 250%;
+  aspect-ratio: auto;
+  background-size: 100% 100%;
+  transform: scale(0.4);
+  transform-origin: 0 0;
+}
+
 .venue-map {
   margin-top: 50px;
   padding: 15px;
@@ -1508,4 +1559,6 @@ figure img {
   .contents-title {
     margin-bottom: 24px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

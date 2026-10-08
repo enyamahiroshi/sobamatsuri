@@ -1041,6 +1041,7 @@ td {
 
   &.is-zoomed {
     cursor: grab;
+    touch-action: none;
   }
 
   &.is-dragging {
@@ -1420,6 +1421,55 @@ figure {
     vertical-align: bottom;
     width: 100%;
     height: auto;
+  }
+}
+
+.booth-map-link {
+  margin: 32px 0 0;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
+}
+
+.booth-map-link + .title-img {
+  margin-top: 32px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 16px;
+  }
+}
+
+.booth-map {
+  margin-top: 40px;
+  scroll-margin-top: 16px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+
+  .map-magnifier__note {
+    margin-top: 0;
+  }
+
+  // map-magnifier.js の ZOOM(2.5) と同じ倍率。拡大時に元画素を使う
+  .map-magnifier--sharp {
+    aspect-ratio: 716 / 1048;
+
+    .map-magnifier__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 250%;
+      height: 250%;
+      aspect-ratio: auto;
+      background-size: 100% 100%;
+      transform: scale(0.4);
+      transform-origin: 0 0;
+    }
   }
 }
 

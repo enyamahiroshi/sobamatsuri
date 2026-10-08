@@ -43,6 +43,9 @@
 
       const getImageRect = () => image.getBoundingClientRect();
 
+      // 高解像度画像はレイアウトを拡大倍率ぶん広げ、見た目は縮めておく
+      const sharp = container.classList.contains("map-magnifier--sharp");
+
       const clampPan = (panX, panY, width, height) => {
         const minX = width * (1 - state.zoom);
         const minY = height * (1 - state.zoom);
@@ -53,17 +56,25 @@
         };
       };
 
+      const panLimitSize = () => {
+        const rect = sharp ? container.getBoundingClientRect() : getImageRect();
+
+        return { width: rect.width, height: rect.height };
+      };
+
       const applyTransform = (animate) => {
         image.style.transition = animate ? "transform 0.2s ease" : "none";
 
         if (state.zoom === 1) {
-          image.style.transform = "";
-          image.style.transformOrigin = "";
+          image.style.transform = sharp ? `scale(${1 / ZOOM})` : "";
+          image.style.transformOrigin = sharp ? "0 0" : "";
           return;
         }
 
+        const scale = sharp ? state.zoom / ZOOM : state.zoom;
+
         image.style.transformOrigin = "0 0";
-        image.style.transform = `translate(${state.panX}px, ${state.panY}px) scale(${state.zoom})`;
+        image.style.transform = `translate(${state.panX}px, ${state.panY}px) scale(${scale})`;
       };
 
       const resetZoom = () => {
@@ -75,13 +86,13 @@
       };
 
       const zoomAt = (x, y) => {
-        const rect = getImageRect();
+        const limit = panLimitSize();
 
         state.zoom = ZOOM;
         state.panX = x * (1 - ZOOM);
         state.panY = y * (1 - ZOOM);
 
-        const clamped = clampPan(state.panX, state.panY, rect.width, rect.height);
+        const clamped = clampPan(state.panX, state.panY, limit.width, limit.height);
         state.panX = clamped.panX;
         state.panY = clamped.panY;
 
@@ -148,12 +159,12 @@
 
         state.hasDragged = true;
 
-        const rect = getImageRect();
+        const limit = panLimitSize();
         const clamped = clampPan(
           state.startPanX + deltaX,
           state.startPanY + deltaY,
-          rect.width,
-          rect.height
+          limit.width,
+          limit.height
         );
 
         state.panX = clamped.panX;
@@ -193,6 +204,10 @@
         event.preventDefault();
         resetZoom();
       });
+
+      if (sharp) {
+        applyTransform(false);
+      }
     });
   };
 
