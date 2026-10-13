@@ -1,0 +1,5 @@
+# Cursor の設定・ルール
+.cursor/
+
+# VS Code の設定
+.vscode/
